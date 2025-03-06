@@ -8,7 +8,7 @@ import {
   paraChain,
   relayChain,
   paseoRelayChainApi,
-  paseoPeopleChainId,
+  paseoRelayChainApi as paseoPeopleChainApi,
 } from "./api";
 import { ReserveTransfer } from "./ReserveTransfer";
 
@@ -25,7 +25,7 @@ function App() {
         <TransferrableBalance />
       </ChainProvider>
       <ReserveTransfer />
-      <ChainProvider value={{ client: relayChain, api: paseoPeopleChainId }}>
+      <ChainProvider value={{ client: relayChain, api: paseoPeopleChainApi }}>
         <h3>From: Paseo People Chain</h3> <BlockNumbers />
         <TransferrableBalance />
       </ChainProvider>

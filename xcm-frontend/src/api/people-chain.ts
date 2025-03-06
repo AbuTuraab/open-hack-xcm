@@ -15,5 +15,5 @@ const provider = getSmProvider(smoldotParaChain);
 export const peopleParachain = createClient(provider);
 
 export const PASEO_PEOPLE_CHAIN_ID = 1004;
-export const paseoPeopleChainId = peopleParachain.getTypedApi(paseoPeople);
+export const paseoPeopleChainApi = peopleParachain.getTypedApi(paseoPeople);
 export type PaseoPeopleChainApi = TypedApi<typeof paseoPeople>;
